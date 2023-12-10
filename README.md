@@ -1,16 +1,16 @@
 # first-check
-matrix = [
-     [' ' , 1, 2, 3]
-    ,[1, '-', '-', '-']
-    ,[2, '-', '-', '-']
-    ,[3, '-', '-', '-']
- ]
+atrix = [
+    [' ', 1, 2, 3]
+    , [1, '-', '-', '-']
+    , [2, '-', '-', '-']
+    , [3, '-', '-', '-']
+]
 matrix1 = [
-     [' ' , 1, 2, 3]
-    ,[1, '-', '-', '-']
-    ,[2, '-', '-', '-']
-    ,[3, '-', '-', '-']
- ]
+    [' ', 1, 2, 3]
+    , [1, '-', '-', '-']
+    , [2, '-', '-', '-']
+    , [3, '-', '-', '-']
+]
 
 i = 0
 k = 1
@@ -32,15 +32,17 @@ while 1 > i:
 
         else:
             matrix1[L][M] = matrix[L][M]
-            #print(matrix)
+            # print(matrix)
             x1 = [x[0] for x in matrix]
             x2 = [x[1] for x in matrix]
             x3 = [x[2] for x in matrix]
             x4 = [x[3] for x in matrix]
-            print(x1)
-            print(x2)
-            print(x3)
-            print(x4)
+            def show():
+                print(x1)
+                print(x2)
+                print(x3)
+                print(x4)
+            show()
             # столбцы
             if matrix[L][M] == matrix[1][1] and matrix[L][M] == matrix[1][2] and matrix[L][M] == matrix[1][3]:
                 print("победа 1-го игрока")
@@ -66,7 +68,6 @@ while 1 > i:
             if matrix[L][M] == matrix[3][1] and matrix[L][M] == matrix[3][2] and matrix[L][M] == matrix[3][3]:
                 print("победа 1-го игрока")
                 i = i + 2
-
 
             # диогонали
             if matrix[L][M] == matrix[1][1] and matrix[L][M] == matrix[2][2] and matrix[L][M] == matrix[3][3]:
@@ -93,14 +94,21 @@ while 1 > i:
             matrix[L][M] = '-'
         else:
             matrix1[L][M] = matrix[L][M]
+            # print(matrix)
             x1 = [x[0] for x in matrix]
             x2 = [x[1] for x in matrix]
             x3 = [x[2] for x in matrix]
             x4 = [x[3] for x in matrix]
-            print(x1)
-            print(x2)
-            print(x3)
-            print(x4)
+
+
+            def show1():
+                print(x1)
+                print(x2)
+                print(x3)
+                print(x4)
+
+
+            show1()
 
             # столбцы
             if matrix[L][M] == matrix[1][1] and matrix[L][M] == matrix[1][2] and matrix[L][M] == matrix[1][3]:
@@ -128,7 +136,6 @@ while 1 > i:
             if matrix[L][M] == matrix[3][1] and matrix[L][M] == matrix[3][2] and matrix[L][M] == matrix[3][3]:
                 print("победа 2-го игрока")
                 i = i + 1
-
 
             # диогонали
             if matrix[L][M] == matrix[1][1] and matrix[L][M] == matrix[2][2] and matrix[L][M] == matrix[3][3]:
